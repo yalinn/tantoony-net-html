@@ -1,0 +1,124 @@
+:root {
+    --color-dark-gray: #23232e;
+    --color-darker: rgba(0, 0, 0, 0.376);
+    --color-dark-purple: #4c2a83;
+    --color-light-purple: #624688;
+    --color-dark-teal: #68e4eb;
+    --color-light-teal: #c2dbd6;
+    font-size: 20px;
+}
+
+main {
+    margin-left: 5rem;
+    padding: 1rem;
+}
+
+body {
+    background-color: var(--color-light-purple);
+    color: var(--color-light-teal);
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar {
+    width: 0.1rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--color-light-purple);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--color-light-teal);
+}
+
+nav {
+    font-size: 25%;
+    position: fixed;
+    background-color: var(--color-dark-gray);
+    width: 5rem;
+    height: 100vh;
+    transition: width 500ms ease, font-size 500ms ease;
+}
+
+nav:hover {
+    width: 16rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: space-evenly;
+}
+
+nav ul li {
+    width: 100%;
+}
+
+nav ul li:last-child {
+    margin-top: auto;
+}
+
+nav ul li a {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    text-decoration: none;
+    filter: grayscale(100%) opacity(0.5);
+    transition: 500ms ease;
+}
+
+nav ul li a span {
+    filter: opacity(0);
+    color: var(--color-light-teal);
+    transition: filter 500ms ease, font-size 500ms ease;
+}
+
+nav ul li a:hover {
+    filter: grayscale(0%) opacity(1);
+    background-color: var(--color-darker);
+    transition: filter 800ms ease;
+}
+
+nav:hover ul li a span {
+    font-size: 400%;
+    margin-left: 0;
+    filter: opacity(1);
+    transition: filter 500ms ease, font-size 500ms ease;
+    transition-delay: 300ms;
+}
+
+nav ul li > a img {
+    filter: invert(87%) sepia(85%) saturate(4982%) hue-rotate(162deg) brightness(105%) contrast(89%);
+    width: 2rem;
+    min-width: 2rem;
+    margin: 0 1.5rem;
+}
+
+nav .logo img {
+    filter: none;
+    filter: invert(87%) sepia(85%) saturate(4982%) hue-rotate(162deg) brightness(105%) contrast(89%);
+    width: 2rem;
+    min-width: 2rem;
+    margin: 0 1.5rem;
+}
+
+nav:hover .logo img {
+    filter: none;
+    filter: opacity(100%), grayscale(0%), contrast(100%), saturate(100%);
+    width: 2rem;
+    min-width: 2rem;
+    margin: 0 1.5rem;
+}
+
+nav .logo a {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-align: center;
+}
