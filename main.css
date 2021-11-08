@@ -424,8 +424,9 @@ section#skills {
     margin-top: 3rem;
 }
 
-section#skills div>header>h1 {
+section#skills>header>h1 {
     color: whitesmoke;
+    background-color: initial;
     text-align: center;
     padding-top: 4rem;
     padding-bottom: -1rem;
@@ -434,6 +435,7 @@ section#skills div>header>h1 {
 section#skills div.xd {
     display: flex;
     padding: 3rem;
+    margin-bottom: 10rem;
     overflow-x: scroll;
 }
 
@@ -466,7 +468,7 @@ section#skills div.xd article {
     padding: 1.5rem;
     border-radius: 16px;
     background: #17141d;
-    box-shadow: -1rem 0 3rem #000;
+    box-shadow: -1.5rem 0.5rem 2.5rem #000;
     display: flex;
     flex-direction: column;
     transition: .2s;
@@ -541,7 +543,7 @@ section#skills div.xd article header img {
     font-weight: 700;
     font-size: .5rem;
     color: #7a7a8c;
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-size: .66rem;
     border: 3px solid #28242f;
     border-radius: 2rem;
