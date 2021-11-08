@@ -106,6 +106,7 @@ main {
     background-image: url('./assets/Backup/bgroud.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 /* --------------------------
